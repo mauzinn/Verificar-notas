@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+</head>
+<body>
+    <h1>Verificar notas de alunos</h1>
+    <form>
+        <input id="input" type="text"><br><br>
+        <button type="reset" onclick="notas()">Verificar</button>
+    </form>
+
+    <h2>Lista de Alunos:</h2><br>
+    <Ol>
+        <li>Maria eduarda pinheiro</li><br>
+        <li>Mário santos drumond</li><br>
+        <li>Lauanne dos santos</li><br>
+        <li>Gabriel gondim da silva</li>
+    </Ol>
+
+    <script>
+        function notas() {
+            var input = document.getElementById('input').value
+            var res = document.getElementById('inputAlunos')
+            if (input == 'Maria eduarda pinheiro' || input == 1) {
+                alert('6.5 PASSOU!')
+            } else if (input == 'Lauanne dos santos' || input == 3) {
+                alert('2.2 REPROVOU!')
+            } else if (input == 'Mário santos drumond' || input == 2) {
+                alert('9.2 PASSOU!')
+            } else if (input == 'Gabriel gondim da silva' || input == 4) {
+                alert('5.5 REPROVOU!')
+            } else {
+                alert('[ERRO] Aluno não encontrado!')
+            }
+        }
+    </script>
+</body>
+</html>
